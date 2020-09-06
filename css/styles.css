@@ -745,6 +745,13 @@ textarea {
   box-sizing: border-box;
   border-radius: 4px;
 }
+.comment:focus {
+  border-color: var(--accent-color);
+}
+.comment:focus,
+.comment::placeholder {
+  color: var(--accent-color);
+}
 .footer-form-button {
   display: inline-block;
 }
@@ -801,12 +808,15 @@ textarea {
   left: 16px;
   transform: translateY(-50%);
 }
+.form-input:focus {
+  border-color: var(--accent-color);
+}
 .form-input:focus ~ .icone {
   fill: var(--accent-color);
 }
 .modal-close {
   position: absolute;
-  widows: 30px;
+  width: 30px;
   height: 30px;
   top: 8px;
   right: 8px;
